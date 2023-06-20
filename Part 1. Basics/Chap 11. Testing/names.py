@@ -1,0 +1,19 @@
+"""
+The program names.py lets users enter a
+first and last name, and see a neatly formatted full name:
+"""
+
+from name_function import get_formatted_name
+
+print("enter 'q' at any time to quit")
+
+while True:
+    first = input("\nPlease enter your first name: ")
+    if first == 'q':
+        break
+    last = input("\nPlease enter your last name: ")
+    if last == 'q':
+        break
+
+    formatted_name = get_formatted_name(first, last)
+    print(f"your full names are: {formatted_name}")
